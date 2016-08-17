@@ -17,6 +17,12 @@
    FOREIGN KEY(uid) REFERENCES user_info(id),
    FOREIGN KEY(cid) REFERENCES course_info(id)
  );
+ CREATE TABLE photo(
+   id INT NOT NULL PRIMARY KEY,
+   NAME VARCHAR(25) NOT NULL,
+   size INT,
+   datas LONGBLOB
+ );
 
 2.插入数据
  INSERT INTO user_info(uname, unumber) VALUES ('张三', 1);
