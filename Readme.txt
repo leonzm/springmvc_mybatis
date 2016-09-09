@@ -4,25 +4,25 @@
    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
    uname VARCHAR(25) NOT NULL,
    unumber INT NOT NULL
- );
+ ) DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci ENGINE=INNODB;
  CREATE TABLE course_info(
    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
    cname VARCHAR(25) NOT NULL,
    caddress VARCHAR(255) NOT NULL
- );
+ ) DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci ENGINE=INNODB;
  CREATE TABLE course_user_info(
    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
    uid INT,
    cid INT,
    FOREIGN KEY(uid) REFERENCES user_info(id),
    FOREIGN KEY(cid) REFERENCES course_info(id)
- );
+ ) DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci ENGINE=INNODB;
  CREATE TABLE photo(
    id INT NOT NULL PRIMARY KEY,
    NAME VARCHAR(25) NOT NULL,
    size INT,
    datas LONGBLOB
- );
+ ) DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci ENGINE=INNODB;
 
 2.插入数据
  INSERT INTO user_info(uname, unumber) VALUES ('张三', 1);

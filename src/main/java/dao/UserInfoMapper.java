@@ -18,4 +18,6 @@ public interface UserInfoMapper {
     int updateByPrimaryKey(UserInfo record);
     
     List<UserInfo> selectAll();
+    
+    int inserts(List<UserInfo> records);
 }
