@@ -54,9 +54,9 @@ public class UserServiceTest {
 		int userId1 = 111;
 		int userId2 = 112;
 		int userId3 = 114;
-		//userMapper.deleteByPrimaryKey(userId1);
-		//userMapper.deleteByPrimaryKey(userId2);
-		//userMapper.deleteByPrimaryKey(userId3);
+		userMapper.deleteByPrimaryKey(userId1);
+		userMapper.deleteByPrimaryKey(userId2);
+		userMapper.deleteByPrimaryKey(userId3);
 		
 		UserInfo userInfo1 = new UserInfo();
 		userInfo1.setId(userId1);
