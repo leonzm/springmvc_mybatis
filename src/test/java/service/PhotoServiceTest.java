@@ -34,7 +34,7 @@ public class PhotoServiceTest {
 		photo1 = new Photo();
 		photo1.setId(UUID.randomUUID().toString().replace("-", ""));
 		photo1.setPname("img1.jpg");
-		byte[] datas1 = Tool_File.getDatas("C:/Users/leonhzh/Desktop/img/img1.jpg");
+		byte[] datas1 = Tool_File.getDatas("img/img1.jpg");
 		photo1.setSize(datas1.length);
 		photo1.setDatas(datas1);
 		
@@ -42,14 +42,14 @@ public class PhotoServiceTest {
 		photo2 = new Photo();
 		photo2.setId(UUID.randomUUID().toString().replace("-", ""));
 		photo2.setPname("img2.jpg");
-		byte[] datas2 = Tool_File.getDatas("C:/Users/leonhzh/Desktop/img/img2.jpg");
+		byte[] datas2 = Tool_File.getDatas("img/img2.jpg");
 		photo2.setSize(datas2.length);
 		photo2.setDatas(datas2);
 		
 		photo3 = new Photo();
 		photo3.setId(UUID.randomUUID().toString().replace("-", ""));
 		photo3.setPname("img3.jpg");
-		byte[] datas3 = Tool_File.getDatas("C:/Users/leonhzh/Desktop/img/img3.jpg");
+		byte[] datas3 = Tool_File.getDatas("img/img3.jpg");
 		photo3.setSize(datas3.length);
 		photo3.setDatas(datas3);
 	}
